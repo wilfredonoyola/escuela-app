@@ -1,0 +1,28 @@
+# compiled output
+/dist
+/node_modules
+/build
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Tests
+/coverage
+/.nyc_output
+
+# Env
+.env
+.env.*
+!.env.example
+
+# OS / editors
+.DS_Store
+.idea
+.vscode/*
+
+# temp
+.temp
+.tmp
+*.tsbuildinfo
