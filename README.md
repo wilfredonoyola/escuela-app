@@ -138,16 +138,33 @@ Como responsable técnico cambié varias definiciones. Para cada una: qué pedí
 
 Otras medidas: `helmet` para los headers de seguridad, `/health` para el healthcheck, imágenes Docker multi-stage que corren como usuario `node` sin privilegios.
 
-## Pendiente y cómo lo resolvería con más tiempo
+## Roadmap: seguridad y escalabilidad
 
-- **Persistencia:** los cambios de matrícula viven en memoria y se pierden al reiniciar. El siguiente paso es Postgres con Prisma o TypeORM, implementando los repositorios abstractos.
-- **Sesión:** pasar el token a una cookie `httpOnly; Secure; SameSite=Strict` (con un proxy en Next o un BFF) y agregar refresh tokens y revocación.
-- **Caché distribuida:** el almacén en memoria no se comparte entre réplicas. Usar Redis (Keyv) e invalidar por tags o claves de `/schools` en lugar de `clear()`.
-- **Auditoría:** registrar quién cambió cada matrícula y cuándo (`updatedBy`, `updatedAt`, historial).
-- **Pruebas:** unitarias de servicios y guards, y pruebas de componentes y e2e en el frontend (Playwright). Más CI con lint, tipado y pruebas.
-- **Observabilidad:** logs estructurados (pino) con request-id, métricas y documentación OpenAPI (`@nestjs/swagger`).
-- **UX:** filtros en la URL (`?departamento=`) para poder compartir enlaces, ordenar por columna y avisos (toasts).
-- **Docker:** verificar `docker compose up --build` de punta a punta.
+El MVP es la **base del proyecto**, pero varias decisiones solo son válidas para un entorno local. Esta tabla resume lo que falta para producción y **por qué**. El detalle de cada punto (qué hacer y cuándo se considera terminado) y su seguimiento están en la issue [#2 · Epic: roadmap de seguridad y escalabilidad](https://github.com/wilfredonoyola/escuela-app/issues/2).
+
+- 🔴 **P0**: bloquea la salida a producción
+- 🟠 **P1**: necesario para escalar
+- 🟢 **P2**: calidad y experiencia de usuario
+
+| # | Prioridad | Mejora | Por qué es necesaria |
+| --- | --- | --- | --- |
+| 1 | 🔴 P0 | Base de datos (Postgres + Prisma) | Las ediciones viven en memoria y **se pierden al reiniciar o desplegar** |
+| 2 | 🔴 P0 | Sesión con cookie httpOnly, refresh tokens y revocación | Un XSS puede robar el token de `localStorage`, y un token robado no se puede anular |
+| 3 | 🔴 P0 | Gestión de secretos por entorno | El secreto de desarrollo del compose permitiría **firmar tokens de ADMIN** si llega a producción |
+| 4 | 🔴 P0 | CI y protección de `main` | Nada impide hoy hacer merge de código roto o vulnerable |
+| 5 | 🔴 P0 | Auditoría de cambios de matrícula | Es un dato oficial: hay que saber quién lo cambió, cuándo y desde qué valor |
+| 6 | 🔴 P0 | Gestión de usuarios y bloqueo por intentos fallidos | Los usuarios están en un JSON: no hay alta, baja ni bloqueo de cuentas |
+| 7 | 🔴 P0 | Dependencias seguras (audit y Dependabot) | `npm install` ya reporta vulnerabilidades en dependencias transitivas |
+| 8 | 🟠 P1 | Caché y rate limiting en Redis | Con varias instancias, la caché y el límite de intentos dejan de ser consistentes |
+| 9 | 🟠 P1 | Observabilidad (logs estructurados, Sentry, métricas) | Sin esto, los fallos en producción no se ven ni se pueden diagnosticar |
+| 10 | 🟠 P1 | OpenAPI y tipos compartidos | Los tipos del frontend son una copia manual de los DTOs del backend |
+| 11 | 🟠 P1 | Nest 12 y tests con ESM | Nest 11 quedó fijado por una incompatibilidad de Jest; hay que mantenerse en versiones con soporte |
+| 12 | 🟠 P1 | Docker validado, staging y producción | Los contenedores aún no se han ejecutado de punta a punta |
+| 13 | 🟠 P1 | Tests de frontend y Playwright | El frontend no tiene pruebas; una regresión de permisos en la UI pasaría desapercibida |
+| 14 | 🟢 P2 | UX: filtros en la URL, ordenar, toasts, accesibilidad | Facilitan el trabajo diario del área de Educación |
+| 15 | 🟢 P2 | 🔎 Decisión de producto: datos sensibles del director | Hay que definir si algún rol puede ver DUI y teléfono, y bajo qué reglas |
+
+**Orden sugerido:** 4 → 1 → 3 → 2 → 5 → 7 → 6 → P1 → P2. CI va primero porque protege todo lo demás.
 
 ## Uso de IA
 
