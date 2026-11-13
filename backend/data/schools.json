@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "codigo": "10234",
+    "nombre": "Centro Escolar Cantón El Rosario",
+    "departamento": "La Paz",
+    "municipio": "La Paz Centro",
+    "matricula": 412,
+    "director": {
+      "nombre": "María Elena Rivas",
+      "dui": "00000001-1",
+      "telefonoPersonal": "7000-0001"
+    },
+    "observacionesInternas": "Pendiente auditoría de fondos 2025",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 2,
+    "codigo": "10235",
+    "nombre": "Centro Escolar San Luis Talpa",
+    "departamento": "La Paz",
+    "municipio": "La Paz Oeste",
+    "matricula": 389,
+    "director": {
+      "nombre": "José Antonio Pérez",
+      "dui": "00000002-2",
+      "telefonoPersonal": "7000-0002"
+    },
+    "observacionesInternas": "",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 3,
+    "codigo": "10301",
+    "nombre": "Complejo Educativo Zacatecoluca",
+    "departamento": "La Paz",
+    "municipio": "La Paz Este",
+    "matricula": 1204,
+    "director": {
+      "nombre": "Carmen López",
+      "dui": "00000003-3",
+      "telefonoPersonal": "7000-0003"
+    },
+    "observacionesInternas": "Infraestructura en revisión",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 4,
+    "codigo": "11010",
+    "nombre": "Centro Escolar República de Chile",
+    "departamento": "San Salvador",
+    "municipio": "San Salvador Centro",
+    "matricula": 856,
+    "director": {
+      "nombre": "Luis Hernández",
+      "dui": "00000004-4",
+      "telefonoPersonal": "7000-0004"
+    },
+    "observacionesInternas": "",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 5,
+    "codigo": "11011",
+    "nombre": "Instituto Nacional de Soyapango",
+    "departamento": "San Salvador",
+    "municipio": "San Salvador Este",
+    "matricula": 1630,
+    "director": {
+      "nombre": "Rosa Martínez",
+      "dui": "00000005-5",
+      "telefonoPersonal": "7000-0005"
+    },
+    "observacionesInternas": "Cambio de director en trámite",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 6,
+    "codigo": "11012",
+    "nombre": "Centro Escolar Mejicanos",
+    "departamento": "San Salvador",
+    "municipio": "San Salvador Centro",
+    "matricula": 720,
+    "director": {
+      "nombre": "Carlos Flores",
+      "dui": "00000006-6",
+      "telefonoPersonal": "7000-0006"
+    },
+    "observacionesInternas": "Pendiente auditoría de fondos 2025",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 7,
+    "codigo": "11013",
+    "nombre": "Centro Escolar Apopa",
+    "departamento": "San Salvador",
+    "municipio": "San Salvador Oeste",
+    "matricula": 945,
+    "director": {
+      "nombre": "Ana Gómez",
+      "dui": "00000007-7",
+      "telefonoPersonal": "7000-0007"
+    },
+    "observacionesInternas": "",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 8,
+    "codigo": "12020",
+    "nombre": "Instituto Nacional de Santa Ana",
+    "departamento": "Santa Ana",
+    "municipio": "Santa Ana Centro",
+    "matricula": 1480,
+    "director": {
+      "nombre": "Miguel Ramírez",
+      "dui": "00000008-8",
+      "telefonoPersonal": "7000-0008"
+    },
+    "observacionesInternas": "Infraestructura en revisión",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 9,
+    "codigo": "12021",
+    "nombre": "Centro Escolar Chalchuapa",
+    "departamento": "Santa Ana",
+    "municipio": "Santa Ana Oeste",
+    "matricula": 610,
+    "director": {
+      "nombre": "Sofía Castillo",
+      "dui": "00000009-9",
+      "telefonoPersonal": "7000-0009"
+    },
+    "observacionesInternas": "",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 10,
+    "codigo": "12022",
+    "nombre": "Centro Escolar Metapán",
+    "departamento": "Santa Ana",
+    "municipio": "Santa Ana Norte",
+    "matricula": 530,
+    "director": {
+      "nombre": "Jorge Méndez",
+      "dui": "00000010-0",
+      "telefonoPersonal": "7000-0010"
+    },
+    "observacionesInternas": "Cambio de director en trámite",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 11,
+    "codigo": "13030",
+    "nombre": "Centro Escolar Ciudad Barrios",
+    "departamento": "San Miguel",
+    "municipio": "San Miguel Norte",
+    "matricula": 470,
+    "director": {
+      "nombre": "María Elena Rivas",
+      "dui": "00000011-1",
+      "telefonoPersonal": "7000-0011"
+    },
+    "observacionesInternas": "Pendiente auditoría de fondos 2025",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 12,
+    "codigo": "13031",
+    "nombre": "Instituto Nacional de San Miguel",
+    "departamento": "San Miguel",
+    "municipio": "San Miguel Centro",
+    "matricula": 1320,
+    "director": {
+      "nombre": "José Antonio Pérez",
+      "dui": "00000012-2",
+      "telefonoPersonal": "7000-0012"
+    },
+    "observacionesInternas": "",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 13,
+    "codigo": "14040",
+    "nombre": "Centro Escolar Santa Tecla",
+    "departamento": "La Libertad",
+    "municipio": "La Libertad Sur",
+    "matricula": 880,
+    "director": {
+      "nombre": "Carmen López",
+      "dui": "00000013-3",
+      "telefonoPersonal": "7000-0013"
+    },
+    "observacionesInternas": "Infraestructura en revisión",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 14,
+    "codigo": "14041",
+    "nombre": "Centro Escolar Puerto de La Libertad",
+    "departamento": "La Libertad",
+    "municipio": "La Libertad Costa",
+    "matricula": 395,
+    "director": {
+      "nombre": "Luis Hernández",
+      "dui": "00000014-4",
+      "telefonoPersonal": "7000-0014"
+    },
+    "observacionesInternas": "",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 15,
+    "codigo": "14042",
+    "nombre": "Complejo Educativo Quezaltepeque",
+    "departamento": "La Libertad",
+    "municipio": "La Libertad Norte",
+    "matricula": 760,
+    "director": {
+      "nombre": "Rosa Martínez",
+      "dui": "00000015-5",
+      "telefonoPersonal": "7000-0015"
+    },
+    "observacionesInternas": "Cambio de director en trámite",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 16,
+    "codigo": "15050",
+    "nombre": "Centro Escolar Juayúa",
+    "departamento": "Sonsonate",
+    "municipio": "Sonsonate Norte",
+    "matricula": 340,
+    "director": {
+      "nombre": "Carlos Flores",
+      "dui": "00000016-6",
+      "telefonoPersonal": "7000-0016"
+    },
+    "observacionesInternas": "Pendiente auditoría de fondos 2025",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 17,
+    "codigo": "15051",
+    "nombre": "Instituto Nacional de Sonsonate",
+    "departamento": "Sonsonate",
+    "municipio": "Sonsonate Centro",
+    "matricula": 1105,
+    "director": {
+      "nombre": "Ana Gómez",
+      "dui": "00000017-7",
+      "telefonoPersonal": "7000-0017"
+    },
+    "observacionesInternas": "",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 18,
+    "codigo": "16060",
+    "nombre": "Centro Escolar Jiquilisco",
+    "departamento": "Usulután",
+    "municipio": "Usulután Oeste",
+    "matricula": 455,
+    "director": {
+      "nombre": "Miguel Ramírez",
+      "dui": "00000018-8",
+      "telefonoPersonal": "7000-0018"
+    },
+    "observacionesInternas": "Infraestructura en revisión",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 19,
+    "codigo": "17070",
+    "nombre": "Centro Escolar Nueva Concepción",
+    "departamento": "Chalatenango",
+    "municipio": "Chalatenango Sur",
+    "matricula": 298,
+    "director": {
+      "nombre": "Sofía Castillo",
+      "dui": "00000019-9",
+      "telefonoPersonal": "7000-0019"
+    },
+    "observacionesInternas": "",
+    "createdBy": "etl-sistema-legado"
+  },
+  {
+    "id": 20,
+    "codigo": "17071",
+    "nombre": "Centro Escolar Dulce Nombre de María",
+    "departamento": "Chalatenango",
+    "municipio": "Chalatenango Centro",
+    "matricula": 210,
+    "director": {
+      "nombre": "Jorge Méndez",
+      "dui": "00000020-0",
+      "telefonoPersonal": "7000-0020"
+    },
+    "observacionesInternas": "Cambio de director en trámite",
+    "createdBy": "etl-sistema-legado"
+  }
+]
