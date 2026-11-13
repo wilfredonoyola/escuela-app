@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ana Administradora",
+    "email": "admin@prueba.test",
+    "passwordHash": "$2b$10$T.e6UJCdpLBdkmfPmaWubebT1JhuXAXFIUpaKfhAFwe2olAaQDXIS",
+    "rol": "ADMIN"
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos Consulta",
+    "email": "consulta@prueba.test",
+    "passwordHash": "$2b$10$itbG3Al6W7ExSwJxnFMzOeVJTXjQjrdCRR1d2Ri3Ax2QOIin6488a",
+    "rol": "CONSULTA"
+  },
+  {
+    "id": 3,
+    "nombre": "Beatriz Supervisora",
+    "email": "admin2@prueba.test",
+    "passwordHash": "$2b$10$qBKx.UZh8wnb4ueK3.QfqeZ9k6iVbmCwb8CESIMcHYxUSw6FVYenu",
+    "rol": "ADMIN"
+  },
+  {
+    "id": 4,
+    "nombre": "Diego Lector",
+    "email": "consulta2@prueba.test",
+    "passwordHash": "$2b$10$LnP4CFyRBbVTcURYdMMhSeK2dJSU02WR7p00DnuWazSoQh6x.skMu",
+    "rol": "CONSULTA"
+  }
+]
